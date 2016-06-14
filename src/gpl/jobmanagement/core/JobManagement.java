@@ -1,3 +1,5 @@
-class JobManagement{
+package gpl.jobmanagement.core;
+public class JobManagement{
 
+    
 }
