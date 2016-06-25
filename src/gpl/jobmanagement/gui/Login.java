@@ -27,21 +27,75 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jUsernameLbl = new javax.swing.JLabel();
+        jUsernameTxt = new javax.swing.JTextField();
+        jPasswordLbl = new javax.swing.JLabel();
+        jPasswordFld = new javax.swing.JPasswordField();
+        jOKBtn = new javax.swing.JButton();
+        jCancelBtn = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jUsernameLbl.setText("Username");
+
+        jUsernameTxt.setText("[Username]");
+
+        jPasswordLbl.setText("Password");
+
+        jPasswordFld.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordFldActionPerformed(evt);
+            }
+        });
+
+        jOKBtn.setText("OK");
+
+        jCancelBtn.setText("Cancel");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPasswordLbl)
+                            .addComponent(jUsernameLbl)
+                            .addComponent(jUsernameTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
+                            .addComponent(jPasswordFld)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jOKBtn)
+                        .addGap(18, 18, 18)
+                        .addComponent(jCancelBtn)))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addComponent(jUsernameLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jUsernameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPasswordLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jOKBtn)
+                    .addComponent(jCancelBtn))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordFldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -49,5 +103,11 @@ public class Login extends javax.swing.JFrame {
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jCancelBtn;
+    private javax.swing.JButton jOKBtn;
+    private javax.swing.JPasswordField jPasswordFld;
+    private javax.swing.JLabel jPasswordLbl;
+    private javax.swing.JLabel jUsernameLbl;
+    private javax.swing.JTextField jUsernameTxt;
     // End of variables declaration//GEN-END:variables
 }
