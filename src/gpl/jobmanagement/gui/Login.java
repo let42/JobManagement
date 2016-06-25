@@ -49,6 +49,11 @@ public class Login extends javax.swing.JFrame {
         });
 
         jOKBtn.setText("OK");
+        jOKBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jOKBtnActionPerformed(evt);
+            }
+        });
 
         jCancelBtn.setText("Cancel");
 
@@ -96,6 +101,10 @@ public class Login extends javax.swing.JFrame {
     private void jPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordFldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jPasswordFldActionPerformed
+
+    private void jOKBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jOKBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jOKBtnActionPerformed
 
     /**
      * @param args the command line arguments
